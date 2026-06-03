@@ -1,52 +1,168 @@
-# 📚 SmartLibrary - Digital Library App
-![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Learning--Project-orange?style=for-the-badge)
+# 📚 SmartLibrary — Digital Library App
 
-**SmartLibrary** adalah solusi perpustakaan digital modern yang dibangun dengan dedikasi tinggi sebagai proyek **UKL (Uji Kenaikan Level) Semester 1** di **SMK Telkom Malang**. Aplikasi ini menggabungkan estetika desain dengan logika pemrograman Dart yang terstruktur.
+<p align="center">
+  <img src="https://img.icons8.com/fluent/144/000000/library.png" alt="Project Logo" width="120">
+  <br>
+  <b>UKL (Level Advancement Test) Project · Semester 1 · SMK Telkom Malang</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+  <img src="https://img.shields.io/badge/Status-Learning--Project-orange?style=for-the-badge" alt="Status">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/architecture-MVC-purple?style=flat-square" alt="Architecture">
+  <img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-lightgrey?style=flat-square" alt="Platform">
+</p>
+
 ---
 
-## 🛠️ Arsitektur Proyek (Clean Structure)
-Aplikasi ini menerapkan pemisahan tugas menggunakan pola **MVC (Model-View-Controller)** agar kode lebih mudah dibaca dan dikembangkan.
+## 📖 Table of Contents
 
-```text
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Project Architecture](#-project-architecture)
+- [Reflections & Learning Notes](#-reflections--learning-notes)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Author](#-author)
+- [License](#-license)
+
+---
+
+## 🔍 About the Project
+
+**SmartLibrary** is a modern digital library application built with dedication as a **UKL (Level Advancement Test) project for Semester 1** at **SMK Telkom Malang**.
+
+This project bridges aesthetic design with structured Dart programming logic — demonstrating that even at an early learning stage, clean architecture and functional user experience can be achieved simultaneously.
+
+> *"Every line of code is a step toward mastery."*
+
+---
+
+## 🔥 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 **Smart Authentication** | Smooth transition flow from Splash Screen through a complete Login & Register system |
+| 📖 **Book Management** | Browse a popular book collection with interactive star ratings |
+| ⚡ **Real-time Simulation** | Responsive book stock status indicators — **In Stock** / **Borrowed** |
+| 📥 **Dynamic Input** | Add new books to the collection directly via an Interactive Bottom Sheet |
+| 🌓 **Adaptive UI** | Full Dark Mode support for a comfortable, eye-friendly reading experience |
+
+---
+
+## 🛠️ Project Architecture
+
+This application applies a clear **separation of concerns** using the **MVC (Model-View-Controller)** pattern, making the codebase more readable, maintainable, and scalable.
+
+```
 lib/
-├── ⚙️ controllers/    # Business Logic (Auth, Book, Borrow)
-├── 📄 models/         # Blueprint Data & Object Mapping
-├── 🎨 theme/          # UI Styling & Theme Management
-├── 🖼️ views/          # Halaman Utama Aplikasi
-└── 🧩 widgets/        # Reusable UI Components
-🔥 Fitur Unggulan
-🔐 Smart Authentication: Transisi mulus dari Splash Screen ke sistem masuk/daftar.
+├── ⚙️  controllers/    # Business logic (Auth, Book, Borrow)
+├── 📄  models/         # Data blueprints & object mapping
+├── 🎨  theme/          # UI styling & theme management
+├── 🖼️  views/          # Core application screens
+└── 🧩  widgets/        # Reusable UI components
+```
 
-📖 Book Management: Penjelajahan koleksi buku populer dengan rating interaktif.
+---
 
-⚡ Real-time Simulation: Status stok buku (In Stock/Borrowed) yang responsif.
+## 📝 Reflections & Learning Notes
 
-📥 Dynamic Input: Tambah koleksi buku baru langsung melalui Interactive Bottom Sheet.
+> [!IMPORTANT]
+> This project represents my first deep dive into the Flutter ecosystem.
 
-🌓 Adaptive UI: Dukungan penuh untuk Dark Mode demi kenyamanan mata pengguna.
+As a first-semester student, I came to understand that building an application is not just about crafting a visually appealing interface — it is equally about solid logic, disciplined code structure, and thoughtful user flow design.
 
-📝 Refleksi & Catatan Pembelajaran
-[!IMPORTANT]
-"Setiap baris kode adalah langkah menuju keahlian."
+### What I Learned
 
-Proyek ini adalah langkah pertama saya menyelami ekosistem Flutter. Sebagai siswa semester satu, saya belajar bahwa membuat aplikasi bukan hanya soal tampilan yang cantik, tapi juga tentang logika yang kuat dan struktur folder yang rapi.
+- Fundamentals of the **Dart** programming language
+- **Flutter Widget hierarchy** and layout management (`Row`, `Column`, `Stack`, `ListView`)
+- Simulating data flow using a **local dummy database**
+- Implementing the **MVC pattern** for structured project organization
 
-Apa yang saya pelajari?
+### Current Limitations
 
-Fundamental bahasa pemrograman Dart.
+This project currently relies on **local static data** and has not yet been integrated with a cloud database such as Firebase. I am aware of several areas that still require improvement, including stricter input validation and future API integration.
 
-Hierarki Widget di Flutter dan manajemen tata letak (Layouting).
+That said, this project proves that with persistence and curiosity, complex concepts can be transformed into a working, functional application — and it serves as an important foundation for everything that comes next.
 
-Simulasi aliran data menggunakan Dummy Database.
+---
 
-Keterbatasan Saat Ini:
-Meskipun proyek ini masih menggunakan data lokal (statis) dan belum terintegrasi dengan database cloud seperti Firebase, ini adalah fondasi penting bagi saya. Saya menyadari masih banyak celah untuk perbaikan, seperti validasi input yang lebih ketat dan integrasi API di masa depan. Namun, proyek ini membuktikan bahwa dengan ketekunan, konsep yang rumit bisa diubah menjadi aplikasi yang fungsional.
+## 🛠 Tech Stack
 
-🚀 Cara Menjalankan
-Clone: git clone https://github.com/WagyuuA5/project_UKL_Perpustakaan_Digital.git
+| Tool | Purpose |
+|------|---------|
+| **Flutter** | Cross-platform mobile UI framework |
+| **Dart** | Core programming language |
+| **MVC Pattern** | Architectural structure for separation of concerns |
+| **Local / Dummy Data** | Static data simulation (no backend yet) |
 
-Get Packages: flutter pub get
+---
 
-Run: flutter run
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) installed and configured
+- A connected device or emulator (Android / iOS)
+- Git
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/WagyuuA5/project_UKL_Perpustakaan_Digital.git
+   cd project_UKL_Perpustakaan_Digital
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the application:**
+
+   ```bash
+   flutter run
+   ```
+
+> For a release build: `flutter build apk` (Android) or `flutter build ios` (iOS)
+
+---
+
+## 👤 Author
+
+**Wahyu Ravi Anggoro** — [@WagyuuA5](https://github.com/WagyuuA5)
+Student at **SMK Telkom Malang** · 2026
+
+---
+
+## 📄 License
+
+Copyright © 2026 **Wahyu Ravi Anggoro**. All rights reserved.
+
+This project is licensed under the **Apache License, Version 2.0** (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+---
+
+<p align="center">
+  <i>"Building reliable digital solutions through curiosity and persistence."</i>
+  <br><br>
+  Made with ❤️ by Wahyu Ravi Anggoro &nbsp;|&nbsp; SMK Telkom Malang &nbsp;|&nbsp; 2026
+</p>
